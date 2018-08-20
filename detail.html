@@ -8,39 +8,25 @@
         *{ padding: 0; margin: 0; border: 0; list-style: none; box-sizing: border-box;}
         body{ font-size: 12px; color: #333;}
         a{ color: #333; text-decoration: none;}
-        a:hover,a:active,a:focus{ color: #333; text-decoration: none;}
+        a:hover,a:active,a:focus{ color: #333; text-decoration: none;-webkit-tap-highlight-color:transparent;}
         .pageContainer{ width: 100%; padding: 0 15px;}
         .detailTop{ height: 60px; border-bottom: 1px solid #d6d6d6;}
         .detailTop:after{ display: block; content: ''; clear: both;}
-        .detailImage{ float: left; width: 40px; height: 40px; margin: 10px 12px 0 5px;}
+        .detailImage{ float: left; width: 40px; height: 40px; margin: 10px 12px 0 14px;}
         .topRight{ float: left; width: 75%; padding-top: 10px;}
         .topRight span{ display: block; width: 100%; line-height: 20px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
         .appName{ font-size: 14px;}
         .appAuthor{ color: #666;}
         .detailList{ border-left: 1px solid #d6d6d6; border-right: 1px solid #d6d6d6;}
         .detailList li{ line-height: 38px; position: relative;}
-        .detailList li.listTitle{ line-height: 22px; font-size: 14px;}
+        .detailList li.listTitle{ font-size: 0;}
+        .detailList li.listTitle>span{ font-size: 14px; background: #fff; line-height: 28px;}
         .detailList li:after{ display: block; content: ''; clear: both;}
-        .detailList li>span{ display: inline-block; float: left; border-bottom: 1px solid #d6d6d6; border-right: 1px solid #d6d6d6; border-left: 1px solid transparent; text-align: center;}
-        /*.detailIndex{ width: 15%;}*/
-        .detailWords{ width: 80%; padding: 0 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-        .detailWords span{
-            position: absolute;
-            top: -2px;
-            left: -1px;
-            background: #ffc000;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            padding: 0 15px;
-            width: 80%;
-            height: 104%;
-            border-left: 2px solid #333;
-            border-right: 2px solid #333;
-            border-bottom: 2px solid #333;
-            border-top: 2px solid #333;
-        }
-        .detailList li span.detailRanking{ width: 20%; border-right: 0;}
+        .detailList li>span{ background: #ebf7ff; display: inline-block; float: left; border-bottom: 1px solid #d6d6d6; border-right: 1px solid #d6d6d6; text-align: center;}
+        .detailIndex{ width: 20%;}
+        .detailWords{ width: 65%;}
+        .detailWords a{ display: block; padding: 0 15px; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+        .detailList li span.detailRanking{ width: 15%; border-right: 0;}
         .detailList li .listWords{ font-size: 14px;}
         .listRanking{ background: #ebf7ff;}
         .goBack{ margin-top: 40px;}
@@ -68,35 +54,43 @@
     </div>
     <ul class="detailList">
         <li class="listTitle">
+            <span class="detailIndex">人员</span>
             <span class="detailWords">关键词</span>
             <span class="detailRanking">排名</span>
         </li>
         <li class="listLiFirst">
-            <span class="detailWords listWords"><a href="#"><span>digitial digitial</span></a></span>
+            <span class="detailIndex">张卡仕</span>
+            <span class="detailWords listWords"><a href="#">digitial digitial</a></span>
             <span class="detailRanking listRanking">3</span>
         </li>
         <li>
-            <span class="detailWords listWords"><span>digitial digitial digitial digitialdigitial</span></span>
+            <span class="detailIndex">张卡仕</span>
+            <span class="detailWords listWords"><a href="#">digitial digitial digitial digitialdigitial</a></span>
             <span class="detailRanking listRanking">3</span>
         </li>
         <li>
-            <span class="detailWords listWords"><span>digitial digitial digitial digitialdigitial</span></span>
+            <span class="detailIndex">张卡仕</span>
+            <span class="detailWords listWords"><a href="#">digitial digitial digitial digitialdigitial</a></span>
             <span class="detailRanking listRanking">25</span>
         </li>
         <li>
-            <span class="detailWords listWords"><span>digitial digitial digitial digitialdigitial</span></span>
+            <span class="detailIndex">张卡仕</span>
+            <span class="detailWords listWords"><a href="#">digitial digitial digitial digitialdigitial</a></span>
             <span class="detailRanking listRanking">3</span>
         </li>
         <li>
-            <span class="detailWords listWords"><span>digitial digitial digitial digitialdigitial</span></span>
+            <span class="detailIndex">张卡仕</span>
+            <span class="detailWords listWords"><a href="#">digitial digitial digitial digitialdigitial</a></span>
             <span class="detailRanking listRanking">3</span>
         </li>
         <li>
-            <span class="detailWords listWords"><span>digitial digitial digitial digitialdigitial</span></span>
+            <span class="detailIndex">张卡仕</span>
+            <span class="detailWords listWords"><a href="#">digitial digitial digitial digitialdigitial</a></span>
             <span class="detailRanking listRanking">3</span>
         </li>
         <li>
-            <span class="detailWords listWords"><span>digitial digitial digitial digitialdigitial</span></span>
+            <span class="detailIndex">张卡仕</span>
+            <span class="detailWords listWords"><a href="#">digitial digitial digitial digitialdigitial</a></span>
             <span class="detailRanking listRanking">3</span>
         </li>
     </ul>
